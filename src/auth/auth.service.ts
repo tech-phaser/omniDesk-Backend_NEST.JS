@@ -7,7 +7,6 @@ import { JwtService } from '@nestjs/jwt';
 import { SignupDto } from './dto/signup.dto';
 import { supabase } from 'src/supabaseClient';
 import { SignInDto } from './dto/signin.dto';
-import { error } from 'console';
 import * as bcrypt from 'bcryptjs';
 @Injectable()
 export class AuthService {
@@ -37,7 +36,7 @@ export class AuthService {
       throw new BadRequestException(error.message);
     }
 
-    return { message: 'User created successfully' };
+    return { message: 'User created successfully', signupDto };
   }
 
   //sign in here
