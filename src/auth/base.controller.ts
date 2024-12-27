@@ -57,7 +57,7 @@ export class BaseController {
       </head>
       <body>
         <header>
-          <h1>Welcome to NestJS API</h1>
+          <h1>Welcome to NestJS API Made by Himal Fullel</h1>
         </header>
         <main>
           <p>Explore the following useful routes to interact with the API:</p>
